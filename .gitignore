@@ -21,9 +21,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-<<<<<<< HEAD
 /.metadata/
-=======
 
 HELP.md
 target/
@@ -117,4 +115,3 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
->>>>>>> 3bda9c917666fc58ce4203e3d6854d248ca94c4a
