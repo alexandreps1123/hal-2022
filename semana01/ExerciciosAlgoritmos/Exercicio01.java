@@ -1,5 +1,3 @@
-package semana01.Exercicios;
-
 import java.util.Scanner;
 
 // entrar com um numero de 3 digitos e inverte-los
@@ -8,6 +6,7 @@ public class Exercicio01 {
         Scanner teclado = new Scanner(System.in);
         int numero, centenas, dezenas, unidades, resto;
 
+        System.out.println("Escreva um numero com 3 digitos:");
         numero = teclado.nextInt();
 
         centenas = numero / 100;
