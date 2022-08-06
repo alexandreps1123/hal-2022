@@ -15,24 +15,32 @@ public class Time {
 	}
 	
 	public String exibirHoraUniversal() {
-		return this.hora + ":" + this.minuto + ":" + this.segundo;
+		return fmtNum(this.hora) + ":" + fmtNum(this.minuto) + ":" + fmtNum(this.segundo);
 	}
 	
 	public String exibirHoraPadrao() {
 		String sufixo = "PM";
 		
 		if(this.hora == 0) {
-			this.setHora(12);
+			setHora(12);
 			sufixo = "AM";
 		}
 		if(this.hora > 0 && this.hora < 12) {
 			sufixo = "AM";
 		}
 		else if (this.hora < 12 && this.hora >= 23) {
-			this.setHora(this.hora -12);
+			setHora(this.hora -12);
 		}
 		
-		return this.hora + ":" + this.minuto + ":" + this.segundo + sufixo;
+		return fmtNum(this.hora) + ":" + fmtNum(this.minuto) + ":" + fmtNum(this.segundo) + sufixo;
+	}
+	
+	public String fmtNum(int num) {
+		if(num < 10) {
+			return "0"+num;
+		}
+		
+		return String.valueOf(num);
 	}
 	
 }
