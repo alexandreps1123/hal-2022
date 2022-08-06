@@ -1,5 +1,3 @@
-package semana01.Mentoria01.TabuadaAutomatica;
-
 public class ProcessaTabuada {
 
 	public static void main(String[] args) {
