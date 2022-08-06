@@ -1,5 +1,3 @@
-package semana01.Exercicios;
-
 import java.util.Scanner;
 
 // calcular area de um retangulo, a partir da base e da altura
@@ -10,12 +8,15 @@ public class Exercicio02b {
         double altura;
         double areaRetangulo;
 
+        System.out.println("Digite o valor da base do retangulo:");
         base = teclado.nextDouble();
+
+        System.out.println("Digite o valor da altura do retangulo:");
         altura = teclado.nextDouble();
 
         areaRetangulo = base * altura;
 
-        System.out.printf("%.2f\n", areaRetangulo);
+        System.out.printf("Area do retangulo: %.2f\n", areaRetangulo);
 
         teclado.close();
     }   
