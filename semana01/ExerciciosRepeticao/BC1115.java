@@ -1,21 +1,32 @@
 import java.util.Scanner;
 
 /*
- * ler um valor inteiro N (1 < N < 1000)
- * N = quantidade de linhas de saída
- * 
+ * ler coordenadas X e Y, quantidade indeterminada
+ * escrever o quadrante de cada par ordenado
+ * encerra se algum valor for NULA (não escreve mensagem)
  * 
  */
+
 public class BC1115 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int n = teclado.nextInt();
+        int x;
+        int y;
 
-        for(int i = 0; i < n; i++) {
-            Math.pow(i+1, 1);
-            System.out.printf("%d %d %d\n", Math.pow(i+1, 1), Math.pow(i+1, 2), Math.pow(i+1, 3));
-        }
+        do {
+            x = teclado.nextInt();
+            y = teclado.nextInt();
 
-        teclado.close();
+            if(x ==0 || y == 0) {
+                teclado.close();
+                break;
+            } 
+            else if(x > 0 && y > 0) System.out.println("primeiro");
+            else if(x < 0 && y > 0) System.out.println("segundo");
+            else if(x < 0 && y < 0) System.out.println("terceiro");
+            else System.out.println("quarto");
+                
+        } while(true);
+        
     }
 }
