@@ -32,11 +32,16 @@ public class Comparando {
 		comparaConteudo(s1, s2);
 		comparaConteudo(s3, s4);
 		
-		// novo espaco de memoria eh alocado		
+		// novo espaco de memoria eh alocado para um conteudo diferente
+		// quando nao utilizado new		
 		s2 = "outro role";
+		String s5 = "outro role";
 		
 		comparaLocalMemoria(s1, s2);
 		comparaConteudo(s1, s2);
+		
+		comparaLocalMemoria(s5, s2);
+		comparaConteudo(s5, s2);
 	}
 
 }
