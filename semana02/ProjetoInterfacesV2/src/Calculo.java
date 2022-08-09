@@ -1,5 +1,5 @@
 
-public class Calculo implements Interface1, Interface2{
+public class Calculo implements Interface1, Interface2 {
 	public void realizaCalculo() {
 		System.out.println("Feito o calculo solicitado");
 	}
