@@ -5,6 +5,13 @@ public class Chefe extends Funcionario {
 	private float adicionalFuncao;
 	private float beneficioTerno;
 	
+	public Chefe(String nome, int numeroRegistro, float salarioBAse, float adicionalFuncao, float beneficioTerno) {
+		super(nome, numeroRegistro);
+		this.salarioBAse = salarioBAse;
+		this.adicionalFuncao = adicionalFuncao;
+		this.beneficioTerno = beneficioTerno;
+	}
+
 	@Override
 	public float calcularSalario() {
 		// TODO Auto-generated method stub

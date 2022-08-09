@@ -4,6 +4,12 @@ public abstract class Funcionario {
 	String nome;
 	int numeroRegistro;
 	
+	public Funcionario(String nome, int numeroRegistro) {
+		super();
+		this.nome = nome;
+		this.numeroRegistro = numeroRegistro;
+	}
+
 	public abstract float calcularSalario();
 	
 	public String getNome() {
